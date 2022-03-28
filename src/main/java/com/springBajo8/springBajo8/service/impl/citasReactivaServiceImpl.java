@@ -114,6 +114,8 @@ public class citasReactivaServiceImpl implements IcitasReactivaService {
                 )
                 .switchIfEmpty(Mono.empty());
     }
-
+    public Mono<String> buscarUno() {
+        return Mono.just("Pedro");
+    }
 
 }
